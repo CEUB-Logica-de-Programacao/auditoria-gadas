@@ -1,5 +1,15 @@
 def etapa1(id):
-    return 1000
+    a = str(a)
+    id = list(a)
+    id = sorted(id)
+    a = [id[0], id[3]]
+    b = [id[1], id[2]]
+    a =''.join(a)
+    b = ''.join(b)
+    a=int(a)
+    b=int(b)
+    c = a+b
+    return c
 
 
 def etapa2(votos):
