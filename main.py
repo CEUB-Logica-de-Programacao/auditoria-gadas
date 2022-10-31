@@ -3,11 +3,35 @@ def etapa1(id):
 
 
 def etapa2(votos):
-    return []
+    b = len(x)
+    lista_i = []
+    for i in range(1,b+1):
+        lista_i.append(i)
+    lista_voto_n = []
+    for y in lista_i:
+        if y not in x:
+            lista_voto_n.append(y)
+    return lista_voto_n
 
 
 def etapa3(senha):
-    return False
+    x = input('Senha: ')
+    x = list(x)
+    y = []
+    z = {'*':0,}
+    for i in x:
+        if i not in y:
+            y.append(i)
+            z[i] = 0
+    for i in x:
+        if i in y:
+            z[i] += 1
+            z['*']+=1
+    for i in z:
+        if i == z['*']:
+            continue
+        else:
+            return False
 
 
 if __name__ == "__main__":
