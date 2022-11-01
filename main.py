@@ -1,14 +1,14 @@
 def etapa1(id):
-    a = str(a)
-    id = list(a)
+    id = str(id)
+    id = list(id)
     id = sorted(id)
-    a = [id[0], id[3]]
+    id = [id[0], id[3]]
     b = [id[1], id[2]]
-    a =''.join(a)
+    id = ''.join(id)
     b = ''.join(b)
-    a=int(a)
-    b=int(b)
-    c = a+b
+    id = int(id)
+    b = int(b)
+    c = id+b
     return c
 
 
