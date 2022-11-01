@@ -1,15 +1,32 @@
 def etapa1(id):
     id = str(id)
-    id = list(id)
-    id = sorted(id)
-    id = [id[0], id[3]]
-    b = [id[1], id[2]]
-    id = ''.join(id)
-    b = ''.join(b)
-    id = int(id)
-    b = int(b)
-    c = id+b
-    return c
+    if len(id) == 1:
+        return id
+    elif len(id) == 2:
+        id = int(id[0]) + int(id[1])
+        return int(id)
+    elif len(id) == 3:
+        id = list(id)
+        id.append('0')
+        id = sorted(id)
+        a = [id[0], id[3]]
+        b = [id[1], id[2]]
+        a = ''.join(a)
+        b = ''.join(b)
+        a = int(a)
+        b = int(b)
+        c = a+b
+        return c
+    else:
+        id = list(id)
+        id = sorted(id)
+        a = [id[0], id[3]]
+        b = [id[1], id[2]]
+        a = ''.join(a)
+        b = ''.join(b)
+        a = int(a)
+        b = int(b)
+        return a + b
 
 
 def etapa2(votos):
