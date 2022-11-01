@@ -36,9 +36,6 @@ def etapa3(senha):
     for i in senha:
         if i in y:
             z[i] += 1
-    print(y)
-    print(senha)
-    print(z)
     for i in z:
         while x < len(y):
             if z[i] != z[y[x]]:
