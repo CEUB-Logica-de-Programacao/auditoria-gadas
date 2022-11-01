@@ -1,7 +1,7 @@
 def etapa1(id):
     id = str(id)
     if len(id) == 1:
-        return id
+        return int(id)
     elif len(id) == 2:
         id = int(id[0]) + int(id[1])
         return int(id)
