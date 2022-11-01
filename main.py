@@ -1,7 +1,7 @@
 def etapa1(id):
     id = str(id)
     if len(id) == 1:
-        return int(id)
+        return id
     elif len(id) == 2:
         id = int(id[0]) + int(id[1])
         return int(id)
@@ -13,10 +13,7 @@ def etapa1(id):
         b = [id[1], id[2]]
         a = ''.join(a)
         b = ''.join(b)
-        a = int(a)
-        b = int(b)
-        c = a+b
-        return c
+        return int(a)+int(b)
     else:
         id = list(id)
         id = sorted(id)
@@ -24,9 +21,7 @@ def etapa1(id):
         b = [id[1], id[2]]
         a = ''.join(a)
         b = ''.join(b)
-        a = int(a)
-        b = int(b)
-        return a + b
+        return int(a)+int(b)
 
 
 def etapa2(votos):
