@@ -13,16 +13,15 @@ def etapa1(id):
 
 
 def etapa2(votos):
-    b = len(x)
+    votos = len(x)
     lista_i = []
-    for i in range(1,b+1):
+    for i in range(1,votos+1):
         lista_i.append(i)
     lista_voto_n = []
     for y in lista_i:
         if y not in x:
             lista_voto_n.append(y)
     return lista_voto_n
-
 
 def etapa3(senha):
     senha = list(senha)
