@@ -13,13 +13,14 @@ def etapa1(id):
 
 
 def etapa2(votos):
-    votos = len(x)
+    votos = list(votos)
+    N = len(votos)
     lista_i = []
-    for i in range(1,votos+1):
+    for i in range(1,N+1):
         lista_i.append(i)
     lista_voto_n = []
     for y in lista_i:
-        if y not in x:
+        if y not in votos:
             lista_voto_n.append(y)
     return lista_voto_n
 
