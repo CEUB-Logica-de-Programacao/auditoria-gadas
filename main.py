@@ -25,23 +25,28 @@ def etapa2(votos):
 
 
 def etapa3(senha):
-    x = input('Senha: ')
-    x = list(x)
+    senha = list(senha)
+    x = 1
     y = []
-    z = {'*':0,}
-    for i in x:
+    z = {}
+    valido = True
+    for i in senha:
         if i not in y:
             y.append(i)
             z[i] = 0
-    for i in x:
+    for i in senha:
         if i in y:
             z[i] += 1
-            z['*']+=1
+    print(y)
+    print(senha)
+    print(z)
     for i in z:
-        if i == z['*']:
-            continue
-        else:
-            return False
+        while x < len(y):
+            if z[i] != z[y[x]]:
+                valido = False
+                break
+            x += 1
+    return valido
 
 
 if __name__ == "__main__":
